@@ -1,0 +1,40 @@
+###
+post http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+    "email": "mehran5@gmail.com",
+    "password": "123456"
+}
+
+###
+get http://localhost:3000/auth/1
+
+###
+patch http://localhost:3000/auth/1
+Content-Type: application/json
+
+{
+    "email": "hosseinzadehmehran4@gmaail.com",
+    "password":"12345678"
+}
+
+### 
+delete http://localhost:3000/auth/4b57a84f-17c8-4436-9c42-8112939e6294
+
+###
+post http://localhost:3000/auth/signin
+Content-Type: application/json
+
+{
+    "email": "mehran5@gmail.com",
+    "password": "123456"
+}
+
+
+###
+get http://localhost:3000/auth/me
+
+###
+post http://localhost:3000/auth/signout
+Content-Type: application/json
